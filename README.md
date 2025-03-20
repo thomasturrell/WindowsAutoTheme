@@ -41,4 +41,19 @@ You can manually switch themes using:
 ```
 
 ## Uninstallation
-To remove the scheduled tasks and disable automatic th
+To remove the scheduled tasks and disable automatic theme switching:
+```powershell
+schtasks /delete /tn "UpdateSunsetSchedule" /f
+schtasks /delete /tn "SwitchToLightMode" /f
+schtasks /delete /tn "SwitchToDarkMode" /f
+```
+
+## License
+This project is licensed under the **Apache-2.0 License**.
+
+## Contributions
+Feel free to submit pull requests or open issues for improvements!
+
+---
+🚀 **Enjoy automatic Windows theme switching!**
+
